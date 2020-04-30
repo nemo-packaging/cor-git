@@ -29,5 +29,7 @@ build() {
 package() {
 	cd "$srcdir/${pkgname%-git}"
 	make DESTDIR="$pkgdir/" install
+        # Remove tests
+        rm -rf "$pkgdir"/opt
 }
  
