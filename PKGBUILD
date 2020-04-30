@@ -9,6 +9,7 @@ pkgdesc="another C++/C library. Contains useful utilities which are not a part o
 arch=('x86_64' 'aarch64')
 url="https://git.sailfishos.org/mer-core/cor"
 license=('GPL')
+depends=('systemd-libs')
 makedepends=('git' 'cmake' 'check' 'tut')
 provides=("${pkgname%-git}")
 conflicts=("${pkgname%-git}")
